@@ -13,9 +13,37 @@
 	padding: 0px;
 	transform: scale(1);
 	box-sizing: content-box;
+	opacity: 1;
+	width: auto;
+	height: auto;
 }
-.reveal .controls button.navigate-left {
-
+/*
+.reveal .controls button.navigate-left,
+.reveal .controls button.navigate-right {
+	width: 34px;
+	height: 24px;
+}
+.reveal .controls button.navigate-up,
+.reveal .controls button.navigate-down {
+	width: 24px;
+	height: 34px;
+}
+*/
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled,
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled,
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled,
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  color: #42affa;
+}
+.reveal .controls .navigate-left.enabled:hover,
+.reveal .controls .navigate-right.enabled:hover,
+.reveal .controls .navigate-up.enabled:hover,
+.reveal .controls .navigate-down.enabled:hover {
+  color: #8dcffc;
 }
 /*
 .reveal .controls button.navigate-left {
